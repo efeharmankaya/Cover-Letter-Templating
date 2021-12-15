@@ -34,8 +34,11 @@ Efe Harmankaya
 
 class PDF(FPDF):
     def header(self):
-        # Setup template background
-        self.image('coop_cover_letter_template.png', 0, 0, A4_WIDTH, A4_HEIGHT - 10)
+        '''
+            Optional:
+                Set 'BACKGROUND_TEMPLATE' to an image filepath if a background image is required
+        '''
+        # self.image('BACKGROUND_TEMPLATE', 0, 0, A4_WIDTH, A4_HEIGHT - 10)
         self.ln(20)
 
 
